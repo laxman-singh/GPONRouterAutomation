@@ -72,10 +72,10 @@ public class GPONRouterAutomation {
 
         WebDriver driver = new FirefoxDriver(service, op);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.get("http://192.168.1.1/");
+        driver.get("http://192.168.1.1/"); // router URl
 
-        driver.findElement(By.id("username")).sendKeys("admin");
-        driver.findElement(By.id("password")).sendKeys("admin");
+        driver.findElement(By.id("username")).sendKeys("router-user-name"); // your router username
+        driver.findElement(By.id("password")).sendKeys("router-password"); // your router password
         driver.findElement(By.name("loginBT")).click();
         driver.findElement(By.xpath("/html/body/div/section/div[1]/div/div[1]/ul[5]/li[1]/a")).click();
         driver.findElement(By.xpath("/html/body/div/section/div[1]/div/div[1]/ul[5]/li[6]/a")).click();
