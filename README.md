@@ -60,3 +60,12 @@ WARNING: Unable to find CDP implementation matching 85
 Hurry, mission accomplished ..........!!
 
 ```
+
+## Schedule (CronTab)
+```shell
+$ crontab -e
+```
+
+```text
+0 5 * * * /opt/router-automation/gpon > /opt/router-automation/automation.log
+```
